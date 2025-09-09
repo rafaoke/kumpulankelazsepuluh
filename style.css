@@ -1,0 +1,143 @@
+/* Global */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.intro {
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  transition: 1s;
+}
+.intro .logo-header {
+  margin-top: 40px;
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro .logo.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+.intro .logo.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Glass container */
+.container, .form-box {
+  background: rgba(25, 25, 25, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 25px;
+}
+
+/* Index page container */
+.container {
+  width: 750px;
+}
+
+/* Tambah page form box */
+.form-box {
+  width: 400px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.add-btn {
+  display: block;
+  margin: 0 auto 15px;
+  background: rgba(0, 123, 255, 0.8);
+  color: #fff;
+  margin-left: 645px;
+}
+
+.btn {
+  width: 95%;
+  margin-top: 15px;
+  background: rgba(0, 123, 255, 0.8);
+  color: #fff;
+}
+
+.edit {
+  background: rgba(0, 200, 83, 0.8);
+  color: #fff;
+}
+
+.delete {
+  background: rgba(220, 20, 60, 0.8);
+  color: #fff;
+}
+
+/* Inputs */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+input::placeholder {
+  color: rgba(200, 200, 200, 0.7);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+th {
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: bold;
+}
